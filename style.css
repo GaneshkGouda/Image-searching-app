@@ -1,0 +1,143 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+ 
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    line-height: 1.6;
+    
+}
+
+#main{
+    align-items: center;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+ 
+ 
+    margin-left: 10%;
+}
+#main h1{
+    text-align: center;
+    font-size:56px;
+    font-weight: bold;
+    
+    letter-spacing: .5px;
+    margin: 10px;
+    padding: 20px;
+}
+#main form{
+    
+    padding: 20px;
+    
+}
+#main form input{
+    width: 250px;
+    height: 40px;
+    font-size:20px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#main form button{
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+#img-box{ 
+        display: flex;
+    justify-content: space-between;
+    
+  flex-wrap: wrap;
+     margin: 0 auto;
+     max-width: 1200px;
+      
+ 
+}
+.search-result{
+    margin-bottom: 150px;
+    width:30%;
+    height:  450px; 
+  box-shadow: 0 0 6px rgba(0,0,0,0.2 );
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+     
+
+position: relative;
+}
+ 
+ .search-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition:opacity .2s ease-in-out ;
+ }
+ .search-result img:hover{
+    opacity: .8;
+ }
+ .search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+
+}
+#showbtn{
+ font-size: 18px;   
+ border: none;
+ padding: 10px 20px;
+ text-align: center;
+ display: block;
+ margin: 15px 5px;
+ cursor: pointer;
+margin-left: 50%;
+border-radius: 5px;
+display: none;
+    color: white;
+    background-color: blue;
+}
+@media screen and (max-width:768px) { 
+   #img-box{
+    padding: 20px;
+   }
+    .search-result{
+        width: 45%;
+        height:250px;
+    }
+}
+@media screen and (max-width:480px) { 
+    .search-result{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #img-box{
+        padding: 10px;
+       }
+}
